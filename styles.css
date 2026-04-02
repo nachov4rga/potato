@@ -724,6 +724,8 @@ section {
 
 .project-card {
     position: relative;
+    display: flex;
+    flex-direction: column;
     border-radius: var(--radius-lg);
     padding: 1.5rem;
     overflow: hidden;
@@ -766,6 +768,12 @@ section {
 .project-content {
     position: relative;
     z-index: 2;
+}
+
+.project-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
 .project-image {
@@ -859,6 +867,7 @@ section {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    margin-top: auto;
     padding-top: 1rem;
     border-top: 1px solid var(--line);
 }
