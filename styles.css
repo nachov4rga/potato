@@ -149,15 +149,16 @@ main,
     padding: 0.95rem 1.2rem;
     position: relative;
     isolation: isolate;
-    border: 1px solid rgba(212, 175, 55, 0.14);
+    border: 1px solid rgba(240, 202, 100, 0.22);
     border-radius: 999px;
     background:
-        linear-gradient(180deg, rgba(18, 39, 69, 0.92), rgba(10, 24, 42, 0.9)),
-        radial-gradient(circle at 18% 50%, rgba(212, 175, 55, 0.08), transparent 34%);
+        linear-gradient(180deg, rgba(28, 58, 99, 0.96), rgba(14, 32, 57, 0.94)),
+        radial-gradient(circle at 18% 50%, rgba(240, 202, 100, 0.12), transparent 36%);
     box-shadow:
-        0 14px 36px rgba(0, 0, 0, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.08),
-        inset 0 0 0 1px rgba(23, 49, 84, 0.34);
+        0 16px 42px rgba(0, 0, 0, 0.18),
+        0 0 0 1px rgba(72, 113, 168, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12),
+        inset 0 0 0 1px rgba(36, 73, 119, 0.4);
 }
 
 .nav::before {
@@ -167,8 +168,20 @@ main,
     border-radius: inherit;
     pointer-events: none;
     z-index: 0;
-    background: linear-gradient(90deg, rgba(212, 175, 55, 0.05), rgba(255, 255, 255, 0.03) 35%, rgba(41, 80, 132, 0.12) 100%);
-    opacity: 0.95;
+    background: linear-gradient(90deg, rgba(240, 202, 100, 0.09), rgba(255, 255, 255, 0.06) 35%, rgba(72, 113, 168, 0.16) 100%);
+    opacity: 1;
+}
+
+.nav::after {
+    content: "";
+    position: absolute;
+    inset: -0.25rem;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 0;
+    background: radial-gradient(circle at 18% 50%, rgba(240, 202, 100, 0.1), transparent 26%);
+    opacity: 0.75;
+    filter: blur(12px);
 }
 
 .nav > * {
